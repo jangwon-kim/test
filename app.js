@@ -6,11 +6,12 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , async = require('async')
   , http = require('http')
   , path = require('path');
 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8000;
 
 app.configure(function(){
   app.set('port', port);
